@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> James Kasper Coding Interview </title>
+</head>
+
+	<body>
+		<div style = "text-align:center; width: 200px; margin:auto;">
+			<p id="pageText" style = "border:5px solid; "></p>
+		</div>
+	
+		<script>
+		    var text = "";
+		    var line = "";
+		    var i;
+
+		    for (i = 1; i <= 300; i++) {
+		    	if (i % 5 == 0){
+		    		line = "<p style = \"color:red\"><b>Hello, CoverMyMeds!</b><p>";
+		    		
+		    	}else{
+		    		line = "<p style = \"color:blue\"><b>Hello, World!</b><p>";
+		    	}
+		        text += line;
+		    }
+		    
+		    document.getElementById("pageText").innerHTML = text;
+		</script>
+		
+		</body>
+</html>
